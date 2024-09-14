@@ -1,32 +1,39 @@
-body{
-    font-family: Helvetica, Arial, Helvetica, sans-serif;
+body {
+    font-family: "Montserrat", Times, 'Times New Roman', serif, Arial, Helvetica, sans-serif;
     margin: 0px; 
     font-size: 1.5vw;
 }
 
+
+li {
+    margin-bottom: 10px;
+}
+
+div {
+    padding: 0px;
+}
+
 #logo {
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+    text-align: center;
     margin: 0px;
     padding: 8px;
-    font-family: "Fredoka", sans-serif;
-    width: 16%;
-    text-shadow: 
-    1px 1px 0px black, /* Bottom-right shadow */
-    -1px 1px 0px black, /* Bottom-left shadow */
-    1px -1px 0px black, /* Top-right shadow */
-    -1px -1px 0px black; /* Top-left shadow */
+    width: 40%;
+    
 }
 
 h1 {
     margin: 0px;
-    padding: 8px;
+    padding: 0px;
 }
 
 ul {
     margin: 0px;
+    list-style-type: disc;
 }
 
 body > header {
-    background-color: orange;
+    background-color: rgb(134, 171, 137);
     color: white;
     display: flex;
     height: 10vh;
@@ -39,7 +46,7 @@ body > header {
 }
 
 #nav-ul > li{ 
-    padding: 12px;
+    padding: 5px;
     margin: 16px;
 }
 body > header > nav > ul {
@@ -49,13 +56,39 @@ body > header > nav > ul {
 .navbutton  { 
     color: white;
     text-decoration: none;
-    border: 1px solid white;
-    border-radius: 10%;
 }
 
 body > main article {
     width: 80%;
     margin: auto;
+}
+
+#about-heading {
+    background-color: rgb(203, 226, 181);
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#ingredient-heading {
+    background-color: rgb(203, 226, 181);
+}
+
+#ingredient-list {
+    flex: 1;
+    max-width: 60%;
+}
+
+#ingredient-image img{
+    transform: rotate(90deg);
+    padding: 20px;
 }
 
 #main-content {
@@ -67,6 +100,14 @@ body > main article {
     width: 90%;
 }
 
+#instructions-heading {
+    background-color: rgb(203, 226, 181);
+}
+#recipe-notes {
+    background-color: rgb(162, 139, 85);
+    color: black;
+}
+
 form {
     text-align: center;
 }
@@ -76,24 +117,35 @@ h2 {
 }
 
 body > footer { 
-    background-color: pink;
+    background-color: rgb(134, 171, 137);
     display: flex;
 }
 
 img { 
-    border-radius: 10%;
+    border-radius: 0%;
 }
 
+#header-2 {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
 #footer-ul  {
     display: flex;
     list-style: none;
 }
 
 #footer-ul > div > li {
-    margin-left: 12px; 
+    margin-left: 30px; 
 }
 
 #footer-ul > div > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+#follow-us {
     color: white;
     text-decoration: none;
 }
